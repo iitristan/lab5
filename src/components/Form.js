@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 const AddToDoForm = ({ addToDo }) => {
   const [text, setText] = useState('');
-  const [quantity, setQuantity] = useState(1); // Initialize quantity state
+  const [quantity, setQuantity] = useState(1); 
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    if (!text) return; // Do not add empty to-do items
+    e.preventDefault(); 
+    if (!text) return;
 
     const newToDo = {
       id: Date.now(),
